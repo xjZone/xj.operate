@@ -4,22 +4,18 @@
 <meta charset="utf-8" />
 <meta name="renderer" content="webkit" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-<script src="./static/cj/xj.plugins.setting.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js"></script>
-<script>document.addEventListener('DOMContentLoaded',function(){
-FastClick.attach(document.body)},false);</script>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 
 <meta name="viewport" xj-viewport="{minWidth:400, }" content="width=device-width,initial-scale=1" />
 <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.viewport@0.3.2/dist/xj.viewport.min.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+<script src="../static/cj/xj.plugins.setting.js"></script>
+
 <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.storage@0.2.2/dist/xj.storage.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.
-operate@0.6.0/dist/xj.operate.min.js"></script> -->
-<script src="./dist/xj.operate.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.operate@0.6.0/dist/xj.operate.min.js"></script> -->
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xjZone/xj.ripple@0.3.2/dist/xj.ripple.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.ripple@0.3.2/dist/xj.ripple.min.js"></script>
@@ -27,109 +23,76 @@ operate@0.6.0/dist/xj.operate.min.js"></script> -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xjZone/xj.focus@0.3.2/dist/xj.focus.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.focus@0.3.2/dist/xj.focus.min.js"></script>
 
-<link rel="stylesheet" href="./static/plugin/xj.base/0.4.0/dist/xj.base.min.css" />
-<script src="./static/plugin/xj.base/0.4.0/dist/xj.base.min.js"></script>
+<link id="prism-theme-white" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-material-light.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.css" />
+<script data-manual="prevent prism auto highlighted pre or code" src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
 
-<script src="./static/plugin/xjArrive/0.3.2/dist/xjArrive.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/keep-markup/prism-keep-markup.min.js"></script>
+<style>.xjDemo-pack .xjDemo-body-source-wrap > code mark{background-color:rgba(255,255,64,1.00);}</style>
 
-<link id="prism-theme-white" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-material-light.min.css" />
-<link id="prism-theme-black" rel="alternate stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.min.css" />
-<script data-manual="prevent prism auto highlighted pre or code" src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
+<link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
+<script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
 
-<link rel="stylesheet" href="./static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
-<script src="./static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
+<!-- <script>document.addEventListener('DOMContentLoaded',function(){FastClick.attach(document.body)},false);</script> -->
+<!-- <style>html[class~="xj-base-black"] body{background-color:#333;color:#fff;}</style> -->
 
-<link rel="stylesheet" href="./static/plugin/xjScroll/0.4.0/dist/xjScroll.min.css" />
-<script src="./static/plugin/xjScroll/0.4.0/dist/xjScroll.min.js"></script>
+<!--◇
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.css" />
+<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.js"></script>
+◇-->
 
-<link rel="stylesheet" href="./static/plugin/xjDir/0.2.0/dist/xjDir.min.css" />
-<script src="./static/plugin/xjDir/0.2.0/dist/xjDir.min.js"></script>
+<!--◇
+<link rel="stylesheet" href="../dist/xj.operate.css" />
+<script src="../dist/xj.operate.js"></script>
+◇-->
 
-<!-- ↑ Public | Private ↓ -->
-
-<link rel="stylesheet" href="./static/cj/index.css?date=2022-10-14" />
-<script src="./static/cj/index.js?date=2022-10-14"></script>
-<!-- <script>document.write('<link rel="stylesheet" href="./static/cj/index.css?timeStamp='+ Date.now() +'" />')</script>
-<script>document.write('<script src="./static/cj/index.js?timeStamp='+ Date.now() +'"><\/script>')</script> -->
-
-<title>xj.operate</title>
+<style>
+@font-face{font-family:"Iosevka";src:local('Iosevka'), url("../static/font/iosevka/6.1.2/iosevka-fixed-regular.woff2") format("woff2"), url("../static/font/iosevka/6.1.2/iosevka-fixed-regular.woff") format("woff");}
+a{background-color:transparent;text-decoration:none;cursor:pointer;color:#39f;} html:not(.xj-operate-touch) a:hover{text-decoration:underline;color:#4af;}
+body{box-sizing:border-box;margin:0;padding:0 32px;max-width:1024px;font:16px/1.5 Iosevka,'Microsoft YaHei','Hiragino Sans GB';}
+code{padding:0 8px;background-color:#f0f0f0;color:#f39;font-family:inherit;}
+a > code{color:inherit;}
+</style>
+<title>xj.operate_debug</title>
 </head>
 <body>
 
 
 
-<div id="pub_side">
-	<div id="pub_sidePack">
-		<div id="pub_sideMask"></div>
-		<div id="pub_sideWrap">
-			
-			<div class="xjScroll" id="xjScroll01" xjScroll="{native:true, resizeCallbackType:'none', }" style="width:100%;height:100%;">
-				<div class="xjDir" id="xjDir01" xjDir="{}" style="padding:8px;width:100%;border-right:none;font-family:inherit;">
-					<ul>
-						<li class="xjDir-spread xjDir-active">
-							<a href="javascript:void(0)">
-								<i class="xjDir-icon fas fa-arrow-pointer"></i>
-								<i class="xjDir-text">xj.operate</i>
-								<i class="xjDir-sign"></i>
-							</a>
-							<ul id="xjDir01_ul01"></ul>
-						</li>
-						
-						<li class="xjDir-divide"></li>
-						
-						<li class="xjDir-spread">
-							<a href="javascript:void(0)">
-								<i class="xjDir-icon fas fa-cubes"></i>
-								<i class="xjDir-text">xjZone</i>
-								<i class="xjDir-sign"></i>
-							</a>
-							<ul id="xjDir01_ul02"></ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</div>
-
-
-
-<div id="pub_head">
-	<div id="pub_headPack">
-		<h1 id="pub_headText"><a class="a-unset" href="">xj.operate<small> 判断操作方式</small></a></h1>
-		
-		<form id="pub_headForm" target="_blank" enctype="text/plain" title="Press Enter to Search" action="https://github.com/xjZone/xj.operate/search">
-			<input id="pub_headFormText" class="input-plain" name="q" type="search" autocomplete="off" placeholder="Search" />
-			<label id="pub_headFormIcon" class="fas fa-search" for="pub_headFormText"></label>
-		</form>
-		
-		<a id="pub_headCode" class="button" title="Get Source from GitHub" target="_blank" 
-		 href="https://github.com/xjZone/xj.operate/"> <i class="fab fa-github"></i> </a>
-	</div>
-</div>
-
-
-
-<main id="pub_main">
-<div id="pub_mainPack">
-
-
-
 <section>
-<h2>基本介绍</h2>
+<h2>开发备注</h2>
 
-<p><b>简介</b> : 这个插件主要用于判断用户的操作方式，究竟是用鼠标操作还是触屏操作，在引入了这个插件之后，当用户使用鼠标进行操作时 <code>&lt;html&gt;</code> 上将会出现 <code>xj-operate-mouse</code> 的类，当用户使用触屏进行操作时 <code>&lt;html&gt;</code> 上将会出现 <code>xj-operate-touch</code> 的类，这两个类名的设置并非是一次性的，它会根据用户的操作模式进行动态监听和变化，这有助于我们根据用户不同的操作方式进行不同的设置。</p>
+<p>
+使用鼠标则 <code>html</code> 标签会被添加 <code>xj-operate-mouse</code> 的类名<br />
+使用触屏则 <code>html</code> 标签会被添加 <code>xj-operate-touch</code> 的类名<br />
+</p>
 
-<p><b>兼容</b> : IE10+ / Edge12+ / Firefox / Chrome / Safari / Opera / IOS Webkit / Android Platform</p>
+<p>
+样式只在使用鼠标时生效可这样写 : <code>.xj-operate-mouse button:hover{}</code><br />
+样式只在使用触屏时生效可这样写 : <code>.xj-operate-touch button:hover{}</code><br />
+</p>
 
-<p><b>更新</b> : <a target="_blank" href="https://github.com/xjZone/xj.operate/blob/master/upgrade.md">https://github.com/xjZone/xj.operate/blob/master/upgrade.md</a></p>
+<p>
+可以使用这样的选择器来进行设置样式 <code>html:not(.xj-operate-touch) button:hover{}</code><br />
+在非触屏的状态才有 <code>hover</code> 样式，这样即使没引入 xj.operate 插件，也能够正常生效<br />
+</p>
 
-<p><b>源码</b> : <a target="_blank" href="https://github.com/xjZone/xj.operate/">https://github.com/xjZone/xj.operate/</a></p>
+<p>
+不管是 <code>html</code> 类名，还是 <code>xj.operate.mouse</code> 或 <code>xj.operate.touch</code> 属性，都是会动态变化的<br />
+条件为 <code>touchstart</code> 和 <code>mousemove</code> 的触发间隔是否在 500ms 之内，是为 touch，否则为 mouse<br />
+</p>
 
-<p><b>协议</b> : <a target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, V2.0</a></p>
+<p>
+类名默认设置在 <code>html</code> 标签上，是因为插件被加载时 <code>body</code> 标签不一定存在，但 <code>html</code> 标签总是存在的<br />
+当不是鼠标也不是触屏的状态时 <code>html</code> 标签会被添加 <code>xj-operate-other</code> 类名，但是该状态不会主动出现<br />
+状态总在 <code>mouse</code> 和 <code>touch</code> 之间切换，手动调用 <code>xj.operate.otherSet()</code> 方法才会进入 <code>other</code> 状态<br />
+</p>
 
-<p><b>版本</b> : <select class="select-unset"><option selected="selected">0.6.0</option></select></p>
+<p>
+理想上来讲移动端在插上鼠标后就该变成鼠标状态，目前大部分浏览器也是如此，但老旧浏览器可能不是这样<br />
+Android UC 和 Android Firefox，早期这两个浏览器插上鼠标可被检测出来，但点击后会变成 <code>touch</code> 状态<br />
+这是因为这两个浏览器用鼠标点击，除 PC 端那套事件外，还会同时触发 <code>touchstart</code> 和 <code>touchend</code> 事件<br />
+</p>
 
 <hr />
 </section>
@@ -201,7 +164,7 @@ operate@0.6.0/dist/xj.operate.min.js"></script> -->
 <h2>通过配置控制长按结果</h2>
 <p>在上个例子中我们已经展示了如何让 <code>:hover</code> 选择器不在触屏操作时生效，但如果你觉得在触屏操作时完全禁止 <code>:hover</code> 的样式有些不妥，那么也许可以考虑使用插件提供的折中方案，那就是通过全局配置中的 <code>pressHover</code> 参数，来允许触屏模式下让长按操作能响应 <code>:hover</code> 选择器，其工作原理是判断到长按就临时切换为鼠标的状态，之后如果再次触发了 <code>touchstart</code> 事件就恢复为触屏的状态。</p>
 
-<textarea class="xjDemo" xjDemo="{sourceShow:true, resultContent:'为了避免全局配置影响到当前页面，所以我们创建了一个新页面展示效果&lt;br /&gt;查看 Demo 页面 : &lt;a target=&quot;_blank&quot; href=&quot;./page/demo_01_touchPressHover.html&quot;&gt;touchPressHover.html&lt;/a&gt;',}">
+<textarea class="xjDemo" xjDemo="{sourceShow:true, resultContent:'为了避免全局配置影响到当前页面，所以我们创建了一个新页面展示效果&lt;br /&gt;查看 Demo 页面 : &lt;a target=&quot;_blank&quot; href=&quot;./demo_01_touchPressHover.html&quot;&gt;touchPressHover.html&lt;/a&gt;',}">
 <script>
 // 可在引入插件前通过 xj.operateConfig['0.6.0'] 进行全局配置
 // 中括号的值得和当前插件版本(0.6.0)相同，这是考虑多版本并存
@@ -237,7 +200,7 @@ xj.operateConfig['0.6.0'] = { pressHover : true, };
 <h2>通过配置自定义类名</h2>
 <p>如果你觉得插件提供的默认类名如 <code>xj-operate-mouse</code> 或 <code>xj-operate-touch</code> 实在是太长了，那么可通过全局配置进行修改，但实际上 XJ 并不推荐修改默认类名，因为 XJ 系列插件都是只响应这些默认类名而已，如果修改了可能会引发一些样式错误，但我们还是可以通过全局配置的 <code>mouseCallback</code>, <code>touchCallback</code>, <code>otherCallback</code> 这三个回调方法，在状态被改变的时候同时进行类名的设置。</p>
 
-<textarea class="xjDemo" xjDemo="{sourceShow:true, resultContent:'为了避免全局配置影响到当前页面，所以我们创建了一个新页面展示效果&lt;br /&gt;查看 Demo 页面 : &lt;a target=&quot;_blank&quot; href=&quot;./page/demo_02_customClassName.html&quot;&gt;customClassName.html&lt;/a&gt;',}">
+<textarea class="xjDemo" xjDemo="{sourceShow:true, resultContent:'为了避免全局配置影响到当前页面，所以我们创建了一个新页面展示效果&lt;br /&gt;查看 Demo 页面 : &lt;a target=&quot;_blank&quot; href=&quot;./demo_02_customClassName.html&quot;&gt;customClassName.html&lt;/a&gt;',}">
 <script>
 // 可在引入插件前通过 xj.operateConfig['0.6.0'] 进行全局配置
 // 中括号的值得和当前插件版本(0.6.0)相同，这是考虑多版本并存
@@ -392,32 +355,55 @@ xj.operateConfig['0.6.0'] = {
 
 
 
-<!-- <section>
-<h2>推荐阅读</h2>
-<p>XJ.Chen - <a target="_blank" href="https://juejin.cn/post/????">浅谈 :hover 伪类选择器在 touch 环境如何禁止生效的问题</a></p>
-<hr />
-</section> -->
+<!-- <section><button class="xjButton xjButton-md xjButton-default xjButton-square" type="button" title="changeTheme" style="position:fixed;z-index:40;right:16px;bottom:16px;border-radius:4px;" 
+onclick="$('html').toggleClass('xj-base-black')"><i class="fa fa-lightbulb"></i></button></section> -->
 
+<script>
+// 可在引入插件前通过 xj.operateConfig['0.6.0'] 进行全局配置，注意中括号的值得和当前插件版本相同
+if(window.xj === undefined){ xj = {} };
+if(xj.operateConfig === undefined){ xj.operateConfig = {} };
+xj.operateConfig['0.6.0'] = {
+	
+	classTarget : document.documentElement,		// 将被添加 existClass | mouseClass | touchClass | otherClass 类名的节点，默认 html 标签，建议保持默认别修改
+	existClass : 'xj-operate-exist',			// 初始化后 classTarget 会被添加的类名，默认是 'xj-operate-exist'，可用于 CSS 判断是否有存在 xj.operate 插件
+	
+	mouseClass : 'xj-operate-mouse',			// 当使用了鼠标进行操作，会在 classTarget 节点上添加的类名，默认是 'xj-operate-mouse'，并不推荐修改，因为不少 xj 插件都是默认只响应这个类名，如果需要配置其他类名，可在 mouseCallback 回调中设置
+	touchClass : 'xj-operate-touch',			// 当使用了触屏进行操作，会在 classTarget 节点上添加的类名，默认是 'xj-operate-touch'，并不推荐修改，因为不少 xj 插件都是默认只响应这个类名，如果需要配置其他类名，可在 touchCallback 回调中设置
+	otherClass : 'xj-operate-other',			// 既不是鼠标也不是触屏，会在 classTarget 节点上添加的类名，默认是 'xj-operate-other'，但实际上这个状态并不会自动出现，页面只会在 mouse 和 touch 这两个状态中进行切换，除非是主动调用 otherSet()
+	
+	pressHover : true,							// 当处于 touch 状态时，如果长按屏幕且没有移动过，是否临时转遍为 mouse 状态，以便让 hover 生效，默认为 false
+	delayTime : 500,							// touchstart 和 mousemove 的最大间隔时间，在此时间内触发连续触发这两个事件，将会进入 mouse 状态，默认为 500
+	
+	// 触发为 mouse 状态的回调函数，temporary 参数是这个状态是否为临时性转遍的标志，一般都是 true，除非调用 mouseSet() 时传入了 false，如果该函数最终返回的是 false，那么将会阻止本次进入 mouse 状态
+	mouseCallback : function(tem){ document.documentElement.classList.add('isMouse'), document.documentElement.classList.remove('isTouch'); document.documentElement.classList.remove('isOther'); },
+	
+	// 触发为 touch 状态的回调函数，temporary 参数是这个状态是否为临时性转遍的标志，一般都是 true，除非调用 touchSet() 时传入了 false，如果该函数最终返回的是 false，那么将会阻止本次进入 touch 状态
+	touchCallback : function(tem){ document.documentElement.classList.add('isTouch'), document.documentElement.classList.remove('isMouse'); document.documentElement.classList.remove('isOther'); },
+	
+	// 既不是 mouse 也不是 touch 的回调函数，temporary 参数是调用 otherSet() 传入的参数，这个函数返回 false 将阻止进入 other 状态，实际上 other 状态并不会自动出现，这回调只在调用 otherSet() 时响应
+	otherCallback : function(tem){ document.documentElement.classList.add('isOther'), document.documentElement.classList.remove('isMouse'); document.documentElement.classList.remove('isTouch'); },
+	
+};
+</script>
 
+<!-- <script>document.write('<link rel="stylesheet" href="../dist/xj.operate.css?timeStamp='+ Date.now() +'" />')</script> -->
+<script>document.write('<script src="../dist/xj.operate.js?timeStamp='+ Date.now() +'"><\/script>')</script>
 
-</div>
-</main>
-
-
-
-<div id="pub_foot">
-	<div id="pub_footPack">
-		<div>Copyright © 2015-<script>document.write(new Date().getFullYear())</script> XJ.Chen All Rights Reserved</div>
-		<div>More XJ Plugins : <a target="_blank" href="https://github.com/xjZone/">https://github.com/xjZone/</a></div>
-	</div>
-</div>
-
-<div id="pub_tool">
-	<div id="pub_toolPack">
-		<button id="pub_toolSwitchDir" type="button" title="Switch The Dir"><i class="fas fa-list-ul"></i></button>
-		<button id="pub_toolBackToTop" type="button" title="Back to Top"><i class="fas fa-angles-up"></i></button>
-	</div>
-</div>
+<script>
+console.log(xj.operate);
+// {
+// 	version : pub_version,		// 插件和配置的版本号
+// 	
+// 	mouse : false,				// 是否正处于 mouse 状态，是则返回 true，否则返回 fasle
+// 	touch : false,				// 是否正处于 touch 状态，是则返回 true，否则返回 fasle
+// 	other : false,				// 是否正处于 other 状态，是则返回 true，否则返回 fasle，实际上这个状态并不会自动出现，除非是手动调用了 otherSet()
+// 	
+// 	mouseSet : pub_nothing,		// 手动设置为 mouse 状态，可传入 temporary 参数，不传则默认为 true，也就是设置为 mouse 状态是临时的，传入 false 则永久性进入 mouse 状态，之后就得用 mouseSet() / touchSet() 方法才能恢复继续监听
+// 	touchSet : pub_nothing,		// 手动设置为 touch 状态，可传入 temporary 参数，不传则默认为 true，也就是设置为 touch 状态是临时的，传入 false 则永久性进入 touch 状态，之后就得用 mouseSet() / touchSet() 方法才能恢复继续监听
+// 	otherSet : pub_nothing,		// 手动设置为 other 状态，可传入 temporary 参数，不传则默认为 true，也就是设置为 other 状态是临时的，传入 false 则永久性进入 other 状态，之后就得用 mouseSet() / touchSet() 方法才能恢复继续监听
+// 	
+// }
+</script>
 
 
 

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>demo_02_customClassName</title>
+</head>
+<body>
+
+
+
+<script>
+// 可在引入插件前通过 xj.operateConfig['0.6.0'] 进行全局配置
+// 中括号的值得和当前插件版本(0.6.0)相同，这是考虑多版本并存
+if(window.xj === undefined){ xj = {} };
+if(xj.operateConfig === undefined){ xj.operateConfig = {} };
+
+// xj-operate-* 被改成了简短的 is*
+// 且将类名改在 body 上而不是 html
+var dbc = document.body.classList;
+xj.operateConfig['0.6.0'] = {
+	mouseCallback: function(){ dbc.add('isMouse'), dbc.remove('isTouch'), dbc.remove('isOther') },
+	touchCallback: function(){ dbc.add('isTouch'), dbc.remove('isMouse'), dbc.remove('isOther') },
+	otherCallback: function(){ dbc.add('isOther'), dbc.remove('isMouse'), dbc.remove('isTouch') },
+};
+</script>
+<script>document.write('<script charset="utf-8" src="../dist/xj.operate.js?timeStamp='+ Date.now() +'"><\/script>')</script>
+
+<style>
+.span{display:none;}
+.isMouse .mouse{display:inline;}
+.isTouch .touch{display:inline;}
+.isOther .other{display:inline;}
+</style>
+
+<p> 当前状态 : 
+	<span class="span mouse">mouse</span>
+	<span class="span touch">touch</span>
+	<span class="span other">other</span>
+</p>
+
+
+
+</body>
+</html>
+
+

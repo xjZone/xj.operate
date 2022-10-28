@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>demo_01_touchPressHover</title>
+</head>
+<body>
+
+
+
+<script>
+// 可在引入插件前通过 xj.operateConfig['0.6.0'] 进行全局配置
+// 中括号的值得和当前插件版本(0.6.0)相同，这是考虑多版本并存
+if(window.xj === undefined){ xj = {} };
+if(xj.operateConfig === undefined){ xj.operateConfig = {} };
+
+// pressHover 参数默认为 false，为 true 时如果处于触屏的状态
+// 长按屏幕且没移动过，就临时转遍为鼠标状态，来让 hover 生效
+xj.operateConfig['0.6.0'] = { pressHover : true, };
+</script>
+<script>document.write('<script charset="utf-8" src="../dist/xj.operate.js?timeStamp='+ Date.now() +'"><\/script>')</script>
+
+<style>
+/* 代码和上例完全相同，但全局配置 pressHover 为 true */
+/* 所以 .cube01 在触屏操作模式下时，长按可响应 hover */
+.cube{display:inline-block;width:80px;height:80px;border:1px solid #ccc;}
+.xj-operate-mouse .cube01:hover{background-color:#39f;}
+.cube02:hover{background-color:#39f;}
+</style>
+
+<!-- 不能聚焦在 Safari(IOS) 中无法将响应 hover -->
+<!-- 所以我们为两个 div 添加了 tabIndex 的属性 -->
+<div class="cube cube01" tabIndex="0">cube01</div>
+<div class="cube cube02" tabIndex="0">cube02</div>
+
+
+
+</body>
+</html>
+
+
