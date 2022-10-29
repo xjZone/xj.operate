@@ -11,9 +11,9 @@
 
 **协议** : [Apache License, V2.0](https://www.apache.org/licenses/LICENSE-2.0)  
 
-<!-- ————
+————
 
 **推荐阅读 :**  
-XJ.Chen - [浅谈 :hover 伪类选择器在 touch 环境如何禁止生效的问题](https://juejin.cn/post/????)   -->
+XJ.Chen - [浅谈 :hover 伪类选择器在 touch 环境如何禁止生效的问题](https://juejin.cn/post/7159655319084204068)  
 
 
