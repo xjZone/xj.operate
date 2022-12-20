@@ -8,24 +8,24 @@
 
 
 // ---------------------------------------------------------------------------------------------
-// globalThis | window | self | global
-var pub_global = (typeof(globalThis) !== 'undefined' ? globalThis : typeof(window) !== 'undefined' ? window : typeof(self) !== 'undefined' ? self : global);
+// globalThis, window, self, global
+var pub_global = (typeof(globalThis) !== 'undefined') ? globalThis : (typeof(window) !== 'undefined') ? window : (typeof(self) !== 'undefined') ? self : global;
 
 // public nothing, version, keyword
 var pub_nothing = function(){}, pub_version = '0.6.0', pub_keyword = 'operate';
 
-// public config, advance set
+// public config
 var pub_config = {
 	
-	classTarget : document.documentElement,		// 将被添加 existClass | mouseClass | touchClass | otherClass 类名的节点，默认 html 标签，建议保持默认别修改
-	existClass : 'xj-operate-exist',			// 初始化后 classTarget 会被添加的类名，默认是 'xj-operate-exist'，可用于 CSS 判断是否有存在 xj.operate 插件
+	classTarget : document.documentElement,		// 将被添加 existClass, mouseClass, touchClass, otherClass 配置的节点，默认是 html，这里是建议保持默认，不要修改
+	existClass : 'xj-operate-exist',			// 初始化后 classTarget 配置会被添加的类名，默认是 'xj-operate-exist'，可用于在 CSS 判断是否有本插件，不推荐修改
 	
 	mouseClass : 'xj-operate-mouse',			// 当使用了鼠标进行操作，会在 classTarget 节点上添加的类名，默认是 'xj-operate-mouse'，并不推荐修改，因为不少 xj 插件都是默认只响应这个类名，如果需要配置其他类名，可在 mouseCallback 回调中设置
 	touchClass : 'xj-operate-touch',			// 当使用了触屏进行操作，会在 classTarget 节点上添加的类名，默认是 'xj-operate-touch'，并不推荐修改，因为不少 xj 插件都是默认只响应这个类名，如果需要配置其他类名，可在 touchCallback 回调中设置
 	otherClass : 'xj-operate-other',			// 既不是鼠标也不是触屏，会在 classTarget 节点上添加的类名，默认是 'xj-operate-other'，但实际上这个状态并不会自动出现，页面只会在 mouse 和 touch 这两个状态中进行切换，除非是主动调用 otherSet()
 	
-	pressHover : false,							// 当处于 touch 状态时，如果长按屏幕且没有移动过，是否临时转遍为 mouse 状态，以便让 hover 生效，默认为 false
-	delayTime : 500,							// touchstart 和 mousemove 的最大间隔时间，在此时间内触发连续触发这两个事件，将会进入 mouse 状态，默认为 500
+	pressHover : false,							// 当处于 touch 状态的时候，如果长按屏幕且没有移动过，是否临时转遍为 mouse 状态，以便让 hover 生效，默认为 false
+	delayTime : 500,							// touchstart 和 mousemove 的最大间隔时间，在此时间如果内触发连续触发这两个事件，将会进入 mouse 状态，默认为 500
 	
 	mouseCallback : pub_nothing,				// 触发为 mouse 状态的回调函数，temporary 参数是这个状态是否为临时性转遍的标志，一般都是 true，除非调用 mouseSet() 时传入了 false，如果该函数最终返回的是 false，那么将会阻止本次进入 mouse 状态
 	touchCallback : pub_nothing,				// 触发为 touch 状态的回调函数，temporary 参数是这个状态是否为临时性转遍的标志，一般都是 true，除非调用 touchSet() 时传入了 false，如果该函数最终返回的是 false，那么将会阻止本次进入 touch 状态
@@ -33,7 +33,7 @@ var pub_config = {
 	
 };
 
-// public option(00 items)
+// public option
 var pub_option = {};
 
 
@@ -46,7 +46,7 @@ if(pub_global.xj.operateReturn[pub_version] !== undefined){ return pub_global.xj
 
 
 
-// 创建并合并 config 和 option 参数
+// 创建并合并 config 和 option 对象
 if(pub_global.xj.operateConfig === undefined){ pub_global.xj.operateConfig = {} };
 if(pub_global.xj.operateOption === undefined){ pub_global.xj.operateOption = {} };
 if(pub_global.xj.operateConfig[pub_version] !== undefined){ Object.keys(pub_global.xj.operateConfig[pub_version]).forEach(function(key){ pub_config[key] = pub_global.xj.operateConfig[pub_version][key] }) };

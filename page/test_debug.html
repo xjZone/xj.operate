@@ -4,42 +4,43 @@
 <meta charset="utf-8" />
 <meta name="renderer" content="webkit" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<script src="../static/cj/xj.plugins.setting.js?ver=2022-12-16T05:16:20UTC+8"></script>
 
 <meta name="viewport" xj-viewport="{minWidth:400, }" content="width=device-width,initial-scale=1" />
 <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.viewport@0.3.2/dist/xj.viewport.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-<script src="../static/cj/xj.plugins.setting.js"></script>
-
 <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.storage@0.2.2/dist/xj.storage.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.operate@0.6.0/dist/xj.operate.min.js"></script> -->
+<!--◇ <script src="https://cdn.jsdelivr.net/gh/xjZone/xj.operate@0.6.0/dist/xj.operate.min.js"></script> ◇-->
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xjZone/xj.ripple@0.3.2/dist/xj.ripple.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/xjZone/xj.ripple@0.3.2/dist/xj.ripple.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xjZone/xj.ripple@0.5.0/dist/xj.ripple.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/xjZone/xj.ripple@0.5.0/dist/xj.ripple.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xjZone/xj.focus@0.3.2/dist/xj.focus.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/xjZone/xj.focus@0.3.2/dist/xj.focus.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xjZone/xj.focus@0.4.0/dist/xj.focus.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/xjZone/xj.focus@0.4.0/dist/xj.focus.min.js"></script>
 
-<link id="prism-theme-white" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-material-light.css" />
-<link id="prism-theme-black" rel="alternate stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.css" />
-<script data-manual="prevent prism auto highlighted pre or code" src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
+<!--◇
+<style>html[class~="xj-base-black"] body{background-color:#333333;color:#ffffff;}</style>
+<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.css" />
+<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.js"></script>
+◇-->
 
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/plugins/keep-markup/prism-keep-markup.min.js"></script>
+<!--◇
+<script>document.addEventListener('DOMContentLoaded', function( ){ FastClick.attach(document.body) }, false);</script>
+<script src="https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js"></script>
+◇-->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+
+<link id="prism-theme-white" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-material-light.min.css" />
+<link id="prism-theme-black" rel="alternate stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.min.css" />
+<script data-manual="prevent prism auto highlighted pre or code" src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/plugins/keep-markup/prism-keep-markup.min.js"></script>
 <style>.xjDemo-pack .xjDemo-body-source-wrap > code mark{background-color:rgba(255,255,64,1.00);}</style>
 
 <link rel="stylesheet" href="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.css" />
 <script src="../static/plugin/xjDemo/0.1.0/dist/xjDemo.min.js"></script>
-
-<!-- <script>document.addEventListener('DOMContentLoaded',function(){FastClick.attach(document.body)},false);</script> -->
-<!-- <style>html[class~="xj-base-black"] body{background-color:#333;color:#fff;}</style> -->
-
-<!--◇
-<link rel="stylesheet" href="../static/plugin/xj.base/0.4.0/dist/xj.base.css" />
-<script src="../static/plugin/xj.base/0.4.0/dist/xj.base.js"></script>
-◇-->
 
 <!--◇
 <link rel="stylesheet" href="../dist/xj.operate.css" />
@@ -48,10 +49,11 @@
 
 <style>
 @font-face{font-family:"Iosevka";src:local('Iosevka'), url("../static/font/iosevka/6.1.2/iosevka-fixed-regular.woff2") format("woff2"), url("../static/font/iosevka/6.1.2/iosevka-fixed-regular.woff") format("woff");}
-a{background-color:transparent;text-decoration:none;cursor:pointer;color:#39f;} html:not(.xj-operate-touch) a:hover{text-decoration:underline;color:#4af;}
-body{box-sizing:border-box;margin:0;padding:0 32px;max-width:1024px;font:16px/1.5 Iosevka,'Microsoft YaHei','Hiragino Sans GB';}
-code{padding:0 8px;background-color:#f0f0f0;color:#f39;font-family:inherit;}
-a > code{color:inherit;}
+body{box-sizing:border-box;margin:0;padding:0 32px;max-width:1024px;word-break:break-all;font:16px/1.5 Iosevka, 'Hiragino Sans GB', 'Microsoft YaHei';}
+code{padding:0 8px;background-color:#f0f0f0;color:#f39;font-family:inherit;} a > code{color:inherit;}
+a{background-color:transparent;color:#39f;text-decoration:none;cursor:pointer;}
+html:not(.xj-operate-touch) a:hover{color:#4af;text-decoration:underline;}
+input,textarea, button,select{font-size:inherit;font-family:inherit;}
 </style>
 <title>xj.operate_debug</title>
 </head>
@@ -277,7 +279,7 @@ xj.operateConfig['0.6.0'] = {
 <textarea class="xjDemo" xjDemo="{result:false, larger:true}">
 <script>
 console.log( xj.operate.version );	// 插件和配置的版本号
-	
+
 console.log( xj.operate.mouse );			// 是否正处于 mouse 状态，是则返回 true，否则返回 fasle
 console.log( xj.operate.touch );			// 是否正处于 touch 状态，是则返回 true，否则返回 fasle
 console.log( xj.operate.other );			// 是否正处于 other 状态，是则返回 true，否则返回 fasle，实际上这个状态并不会自动出现，除非是手动调用了 otherSet()
@@ -304,15 +306,15 @@ if(window.xj === undefined){ xj = {} };
 if(xj.operateConfig === undefined){ xj.operateConfig = {} };
 xj.operateConfig['0.6.0'] = {
 	
-	classTarget : document.documentElement,	// 将被添加 existClass | mouseClass | touchClass | otherClass 类名的节点，默认 html 标签，建议保持默认别修改
-	existClass : 'xj-operate-exist',		// 初始化后 classTarget 会被添加的类名，默认是 'xj-operate-exist'，可用于 CSS 判断是否有存在 xj.operate 插件
+	classTarget : document.documentElement,	// 将被添加 existClass | mouseClass | touchClass | otherClass 类名的节点，默认是 html 标签，建议保持默认不要修改
+	existClass : 'xj-operate-exist',		// 初始化后 classTarget 将会被添加的类名，默认是 'xj-operate-exist'，可用于在 CSS 判断是否有存在 xj.operate 插件
 	
 	mouseClass : 'xj-operate-mouse',		// 当使用了鼠标进行操作，会在 classTarget 节点上添加的类名，默认是 'xj-operate-mouse'，并不推荐修改，因为不少 xj 插件都是默认只响应这个类名，如果需要配置其他类名，可在 mouseCallback 回调中设置
 	touchClass : 'xj-operate-touch',		// 当使用了触屏进行操作，会在 classTarget 节点上添加的类名，默认是 'xj-operate-touch'，并不推荐修改，因为不少 xj 插件都是默认只响应这个类名，如果需要配置其他类名，可在 touchCallback 回调中设置
 	otherClass : 'xj-operate-other',		// 既不是鼠标也不是触屏，会在 classTarget 节点上添加的类名，默认是 'xj-operate-other'，但实际上这个状态并不会自动出现，页面只会在 mouse 和 touch 这两个状态中进行切换，除非是主动调用 otherSet()
 	
-	pressHover : false,						// 当处于 touch 状态时，如果长按屏幕且没有移动过，是否临时转遍为 mouse 状态，以便让 hover 生效，默认为 false
-	delayTime : 500,						// touchstart 和 mousemove 的最大间隔时间，在此时间内触发连续触发这两个事件，将会进入 mouse 状态，默认为 500
+	pressHover : false,						// 当处于 touch 状态的时候，如果长按屏幕且没有移动过，是否临时转遍为 mouse 状态，以便让 hover 生效，默认为 false
+	delayTime : 500,						// touchstart 和 mousemove 的最大间隔时间，在此时间如果内触发连续触发这两个事件，将会进入 mouse 状态，默认为 500
 	
 	mouseCallback : function(temp){},		// 触发为 mouse 状态的回调函数，temporary 参数是这个状态是否为临时性转遍的标志，一般都是 true，除非调用 mouseSet() 时传入了 false，如果该函数最终返回的是 false，那么将会阻止本次进入 mouse 状态
 	touchCallback : function(temp){},		// 触发为 touch 状态的回调函数，temporary 参数是这个状态是否为临时性转遍的标志，一般都是 true，除非调用 touchSet() 时传入了 false，如果该函数最终返回的是 false，那么将会阻止本次进入 touch 状态
@@ -391,7 +393,9 @@ xj.operateConfig['0.6.0'] = {
 
 <script>
 console.log(xj.operate);
+
 // {
+// 	
 // 	version : pub_version,		// 插件和配置的版本号
 // 	
 // 	mouse : false,				// 是否正处于 mouse 状态，是则返回 true，否则返回 fasle
